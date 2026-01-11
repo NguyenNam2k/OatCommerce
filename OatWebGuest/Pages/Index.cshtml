@@ -1,0 +1,589 @@
+﻿@page
+@model OatWebGuest.Pages.IndexModel
+@{
+    ViewData["Title"] = "Oatnite - Yến Mạch Dinh Dưỡng Cao Cấp";
+    ViewData["Description"] = "Khởi đầu ngày mới tràn đầy năng lượng với overnight oats cao cấp, giàu protein, chất xơ và các vitamin thiết yếu.";
+    ViewData["Keywords"] = "overnight oats, yến mạch, bữa sáng, dinh dưỡng";
+    ViewData["Canonical"] = "https://oatcure.vn/";
+    ViewData["OgTitle"] = ViewData["Title"];
+    ViewData["OgDescription"] = ViewData["Description"];
+    ViewData["OgImage"] = "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=1200&q=80";
+}
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <a href="/">
+                    <span class="font-['Pacifico'] text-2xl text-primary">Oatnite</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-primary transition-colors">Trang Chủ</a>
+                <a href="#products" class="text-gray-700 hover:text-primary transition-colors">Sản Phẩm</a>
+                <a href="#nutrition" class="text-gray-700 hover:text-primary transition-colors">Dinh Dưỡng</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Đánh Giá</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Liên Hệ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button type="button" class="w-6 h-6 flex items-center justify-center text-gray-700 hover:text-primary" aria-label="Giỏ hàng">
+                    <i class="ri-shopping-cart-line"></i>
+                </button>
+                <button type="button" class="md:hidden w-6 h-6 flex items-center justify-center" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center overflow-hidden"
+         style="background-image: url('https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    Yến Mạch Dinh Dưỡng <span class="text-primary">Oatnite</span>
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Khởi đầu ngày mới tràn đầy năng lượng với overnight oats cao cấp,
+                    giàu protein, chất xơ và các vitamin thiết yếu cho cơ thể khỏe mạnh.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 !rounded-button text-lg font-semibold transition-colors whitespace-nowrap text-center">
+                        Mua Ngay
+                    </a>
+                    <a href="#products" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 !rounded-button text-lg font-semibold transition-colors whitespace-nowrap text-center">
+                        Khám Phá Sản Phẩm
+                    </a>
+                </div>
+                <div class="flex items-center space-x-8 text-sm text-gray-500">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-shield-check-line text-green-500"></i>
+                        </div>
+                        <span>100% Tự Nhiên</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-truck-line text-primary"></i>
+                        </div>
+                        <span>Giao Hàng Miễn Phí</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-time-line text-secondary"></i>
+                        </div>
+                        <span>Chuẩn Bị Chỉ 5 Phút</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nutritional Benefits -->
+<section id="nutrition" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Giá Trị Dinh Dưỡng Vượt Trội</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Mỗi phần Oatnite cung cấp đầy đủ các chất dinh dưỡng thiết yếu
+                để bạn có một ngày làm việc hiệu quả và tràn đầy năng lượng.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="ri-heart-pulse-line text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">12g Protein</h3>
+                <p class="text-gray-600">Hỗ trợ xây dựng và phục hồi cơ bắp hiệu quả</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="ri-leaf-line text-2xl text-secondary"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">8g Chất Xơ</h3>
+                <p class="text-gray-600">Cải thiện tiêu hóa và duy trì cảm giác no lâu</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="ri-flashlight-line text-2xl text-orange-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">15 Vitamin</h3>
+                <p class="text-gray-600">Bổ sung đầy đủ vitamin và khoáng chất cần thiết</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="ri-drop-line text-2xl text-red-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Omega-3</h3>
+                <p class="text-gray-600">Tốt cho tim mạch và hệ thần kinh</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Showcase (static, from export) -->
+<section id="products" class="bg-[#FAFAF8] py-24  bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Giá Trị Dinh Dưỡng Vượt Trội</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Mỗi phần Oatnite cung cấp đầy đủ các chất dinh dưỡng thiết yếu
+                để bạn có một ngày làm việc hiệu quả và tràn đầy năng lượng.
+            </p>
+        </div>
+        <div class="hidden md:block">
+            <div class="bg-[#1a1a1a] text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wide">SẢN PHẨM MỚI</div>
+        </div>
+
+        <!-- keep carousel inside the same centered container (avoid overflow on wide screens) -->
+        <div class="relative mt-8" data-product-showcase>
+            <button type="button" data-product-prev class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all cursor-pointer" aria-label="Sản phẩm trước">
+                <i class="ri-arrow-left-s-line text-2xl text-gray-900"></i>
+            </button>
+            <button type="button" data-product-next class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all cursor-pointer" aria-label="Sản phẩm tiếp theo">
+                <i class="ri-arrow-right-s-line text-2xl text-gray-900"></i>
+            </button>
+
+            <!-- viewport: ensure only the visible page is shown -->
+            <div class="overflow-hidden">
+                <div id="product-scroll" data-product-track class="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Việt Quất Hạnh Nhân" class="w-full h-full object-cover object-top" src="https://public.readdy.ai/ai/img_res/fe261693fb233e1bdddc98f5a103de1c.jpg">
+                            <div class="absolute top-4 left-4 bg-[#2D5F3F] text-white px-3 py-1.5 rounded-full text-xs font-bold">HỮU CƠ</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Việt Quất Hạnh Nhân</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl font-black text-gray-900">199.000₫</span>
+                                <button class="bg-[#2D5F3F] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#234a32] transition-all cursor-pointer">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Dâu Tây Vani" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20layered%20overnight%20oats%2C%20fresh%20strawberry%20slices%2C%20vanilla%20bean%20specks%2C%20creamy%20texture%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20delicious%20presentation%2C%20natural%20lighting%2C%20healthy%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-002&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-[#2D5F3F] text-white px-3 py-1.5 rounded-full text-xs font-bold">HỮU CƠ</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Dâu Tây Vani</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl font-black text-gray-900">199.000₫</span>
+                                <button class="bg-[#2D5F3F] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#234a32] transition-all cursor-pointer">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Socola Đậu Phộng" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20chocolate%20overnight%20oats%2C%20peanut%20butter%20swirl%2C%20cacao%20nibs%20topping%2C%20protein%20rich%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20indulgent%20yet%20healthy%2C%20natural%20lighting%2C%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-003&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-[#2D5F3F] text-white px-3 py-1.5 rounded-full text-xs font-bold">GIÀU PROTEIN</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Socola Đậu Phộng</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl font-black text-gray-900">219.000₫</span>
+                                <button class="bg-[#2D5F3F] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#234a32] transition-all cursor-pointer">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Xoài Nhiệt Đới" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20overnight%20oats%2C%20fresh%20mango%20chunks%2C%20coconut%20flakes%2C%20tropical%20fruit%20mix%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20vibrant%20colors%2C%20natural%20lighting%2C%20exotic%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-004&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-[#2D5F3F] text-white px-3 py-1.5 rounded-full text-xs font-bold">MỚI</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Xoài Nhiệt Đới</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl font-black text-gray-900">219.000₫</span>
+                                <button class="bg-[#2D5F3F] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#234a32] transition-all cursor-pointer">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Táo Quế Ấm Áp" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20overnight%20oats%2C%20diced%20apples%2C%20cinnamon%20sprinkle%2C%20warm%20spices%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20cozy%20comfort%20food%2C%20natural%20lighting%2C%20classic%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-005&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-[#2D5F3F] text-white px-3 py-1.5 rounded-full text-xs font-bold">HỮU CƠ</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Táo Quế Ấm Áp</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl font-black text-gray-900">199.000₫</span>
+                                <button class="bg-[#2D5F3F] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#234a32] transition-all cursor-pointer">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Hỗn Hợp Trái Mọng" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20overnight%20oats%2C%20mixed%20berries%20including%20raspberries%20blueberries%20blackberries%2C%20antioxidant%20rich%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20colorful%20presentation%2C%20natural%20lighting%2C%20superfood%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-006&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-[#2D5F3F] text-white px-3 py-1.5 rounded-full text-xs font-bold">BÁN CHẠY</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Hỗn Hợp Trái Mọng</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl font-black text-gray-900">229.000₫</span>
+                                <button class="bg-[#2D5F3F] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#234a32] transition-all cursor-pointer">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <button class="bg-[#2D5F3F] text-white px-10 py-4 rounded-full text-base font-bold hover:bg-[#234a32] transition-all inline-flex items-center gap-2 whitespace-nowrap cursor-pointer">XEM TẤT CẢ SẢN PHẨM<i class="ri-arrow-right-line text-xl"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Khách Hàng Nói Gì Về Oatnite</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Hàng nghìn khách hàng đã tin tưởng và lựa chọn Oatnite
+                cho bữa sáng dinh dưỡng hàng ngày của họ.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- ...kept from export... -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary font-bold">LH</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Linh Hoàng</h4>
+                        <div class="flex items-center">
+                            <div class="flex space-x-1 mr-2">
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                            </div>
+                            <span class="text-sm text-gray-500">5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    "Tôi đã sử dụng Oatnite được 3 tháng và cảm thấy rất hài lòng.
+                    Không chỉ ngon mà còn giúp tôi no lâu và tràn đầy năng lượng cả buổi sáng.
+                    Đặc biệt là hương vị dâu tây chia, tôi rất thích!"
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-secondary font-bold">MT</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Minh Tuấn</h4>
+                        <div class="flex items-center">
+                            <div class="flex space-x-1 mr-2">
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                            </div>
+                            <span class="text-sm text-gray-500">5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    "Là một người thường xuyên tập gym, tôi cần bữa sáng giàu protein.
+                    Oatnite hoàn toàn đáp ứng nhu cầu của tôi. Chuẩn bị đơn giản,
+                    dinh dưỡng cao và rất tiện lợi cho lối sống bận rộn."
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-orange-500 font-bold">HA</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Hương Anh</h4>
+                        <div class="flex items-center">
+                            <div class="flex space-x-1 mr-2">
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                                <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                            </div>
+                            <span class="text-sm text-gray-500">5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    "Sau khi sinh con, tôi luôn tìm kiếm những thực phẩm lành mạnh
+                    để phục hồi sức khỏe. Oatnite giúp tôi bổ sung đầy đủ dinh dưỡng
+                    mà vẫn dễ tiêu hóa. Con tôi cũng rất thích ăn cùng mẹ."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">Lợi Ích Sức Khỏe Toàn Diện</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-heart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Hỗ Trợ Tiêu Hóa</h3>
+                            <p class="text-gray-600">
+                                Chất xơ beta-glucan trong yến mạch giúp cải thiện hệ vi sinh đường ruột,
+                                hỗ trợ tiêu hóa và hấp thụ chất dinh dưỡng tốt hơn.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-battery-charge-line text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Năng Lượng Bền Vững</h3>
+                            <p class="text-gray-600">
+                                Carbohydrate phức hợp giải phóng năng lượng từ từ,
+                                giúp duy trì sự tỉnh táo và tập trung suốt cả ngày.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-scales-line text-orange-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Kiểm Soát Cân Nặng</h3>
+                            <p class="text-gray-600">
+                                Protein và chất xơ cao giúp tăng cảm giác no,
+                                giảm thèm ăn vặt và hỗ trợ quá trình giảm cân hiệu quả.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-96 bg-cover bg-center rounded-2xl" style="background-image: url('https://readdy.ai/api/search-image?query=healthy%20lifestyle%20woman%20eating%20nutritious%20breakfast%20bowl%20with%20oats%20and%20fruits%20in%20bright%20modern%20kitchen%20natural%20lighting%20wellness%20concept%20high%20quality%20photography&amp;width=600&amp;height=400&amp;seq=health001&amp;orientation=landscape');"></div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+            Bắt Đầu Hành Trình Khỏe Mạnh Ngay Hôm Nay
+        </h2>
+        <p class="text-xl mb-8 opacity-90">
+            Tham gia cùng hàng nghìn khách hàng đã chọn Oatnite
+            cho lối sống lành mạnh và tràn đầy năng lượng.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <button class="bg-white text-primary hover:bg-gray-100 px-8 py-4 !rounded-button text-lg font-semibold transition-colors whitespace-nowrap">
+                Đặt Hàng Ngay
+            </button>
+            <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button text-lg font-semibold transition-colors whitespace-nowrap">
+                Tìm Hiểu Thêm
+            </button>
+        </div>
+        <div class="flex items-center justify-center space-x-8 text-sm opacity-80">
+            <div class="flex items-center space-x-2">
+                <div class="w-4 h-4 flex items-center justify-center">
+                    <i class="ri-truck-line"></i>
+                </div>
+                <span>Miễn phí vận chuyển</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="w-4 h-4 flex items-center justify-center">
+                    <i class="ri-customer-service-line"></i>
+                </div>
+                <span>Hỗ trợ 24/7</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-white" id="contact">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Liên Hệ Với Chúng Tôi</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Bạn có thắc mắc về sản phẩm hoặc cần tư vấn dinh dưỡng?
+                Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ bạn.
+            </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div>
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-map-pin-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Địa Chỉ</h3>
+                            <p class="text-gray-600">123 Đường Nguyễn Huệ, Quận 1<br />TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-phone-line text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Hotline</h3>
+                            <p class="text-gray-600">1900 1234 (Miễn phí)<br />028 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-mail-line text-orange-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                            <p class="text-gray-600">info@oatnite.vn<br />support@oatnite.vn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-2xl">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Họ Tên *</label>
+                            <input type="text" name="fullname" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Số Điện Thoại</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Chủ Đề</label>
+                        <select name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm pr-8">
+                            <option value="">Chọn chủ đề</option>
+                            <option value="product">Tư vấn sản phẩm</option>
+                            <option value="order">Đặt hàng</option>
+                            <option value="nutrition">Tư vấn dinh dưỡng</option>
+                            <option value="support">Hỗ trợ kỹ thuật</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Nội Dung *</label>
+                        <textarea name="message" required rows="5" maxlength="500" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none" placeholder="Vui lòng chia sẻ câu hỏi hoặc góp ý của bạn..."></textarea>
+                        <div class="text-right">
+                            <span id="char-count" class="text-xs text-gray-500">0/500</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap">
+                        Gửi Liên Hệ
+                    </button>
+                </form>
+                <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <a href="/">
+                    <span class="font-['Pacifico'] text-2xl text-primary">Oatnite</span>
+                </a>
+                <p class="mt-4 text-gray-400 leading-relaxed">
+                    Premium overnight oats for a healthy lifestyle.
+                    Start your day with nutrition and energy.
+                </p>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" aria-label="Instagram">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" aria-label="Twitter">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Products</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">Banana Honey</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Strawberry Chia</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Chocolate Almond</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Mixed Berry</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Company</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Our Story</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Support</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Shipping</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">© 2026 Oatnite. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>

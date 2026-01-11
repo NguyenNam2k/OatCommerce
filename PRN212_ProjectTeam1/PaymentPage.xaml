@@ -1,0 +1,71 @@
+﻿<Window x:Class="PRN212_ProjectTeam1.PaymentPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Payment Page" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Product Information Section -->
+        <StackPanel HorizontalAlignment="Left" Width="755" Margin="20,20,0,20">
+            <TextBlock Text="Product Information" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+            <ListView x:Name="ProductListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <!-- Displaying Product Details -->
+                            <TextBlock Text="Product ID:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding ProductId}" Margin="0,0,0,5"/>
+
+                            <TextBlock Text="Product Name:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding ProductName}" Margin="0,0,0,5"/>
+
+                            <TextBlock Text="Sell Price:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding SellPrice, StringFormat={}{0:C}}" Margin="0,0,0,5"/>
+
+                            <TextBlock Text="Number Of Inventory:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding NumberOfInventoty}" Margin="0,0,0,5"/>
+
+                            <TextBlock Text="Date Added:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding DateAdd}" Margin="0,0,0,5"/>
+
+                            <TextBlock Text="Status:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Status}" Margin="0,0,0,5"/>
+
+                            <TextBlock Text="Category Name:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Category.CategoryName}" Margin="0,0,0,5"/>
+
+                            <!-- Product Image -->
+                            <Image Source="{Binding Image}" Width="150" Height="150" Margin="0,10,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+
+        <!-- Buyer Information and Purchase Details Section -->
+        <StackPanel HorizontalAlignment="Left" Width="405" Margin="366,17,0,23">
+            <TextBlock Text="Buyer Information" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <!-- Buyer Name -->
+            <TextBlock Text="Name:" FontWeight="Bold"/>
+            <TextBox x:Name="BuyerNameTextBox" Width="250" Margin="0,0,0,10"/>
+
+            <!-- Buyer Contact Information -->
+            <TextBlock Text="Contact Information:" FontWeight="Bold"/>
+            <TextBox x:Name="ContactInfoTextBox" Width="250" Margin="0,0,0,10"/>
+
+            <!-- Quantity of Items -->
+            <TextBlock Text="Quantity:" FontWeight="Bold"/>
+            <TextBox x:Name="QuantityTextBox" Width="250"/>
+        </StackPanel>
+
+        <!-- QR Code and Payment Section -->
+        <StackPanel HorizontalAlignment="Right" Width="400" Margin="20">
+            <TextBlock Text="Scan to Pay" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+            <Border Background="LightGray" Width="227" Height="300">
+                <Image Source="/Image2.png" Stretch="Fill"/>
+            </Border>
+            <Button Content="Confirm Payment" Margin="0,20,0,0" Click="ConfirmPayment_Click"/>
+            <Button Content="Back to Home" Margin="0,10,0,0" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
