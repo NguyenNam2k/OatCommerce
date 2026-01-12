@@ -46,3 +46,15 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+/* Quick fix: hide third-party watermark injected by readdy.ai/public.readdy.ai */
+#watermark,
+#close-button,
+#generate-button,
+img[src*="public.readdy.ai"],
+img[src*="readdy.ai"],
+a[href*="readdy.ai"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
