@@ -78,7 +78,8 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <!-- Extracted from wwwroot/index.html -->
-    <script src="~/js/index.element.js" asp-append-version="true"></script>
+    @* Disabled to prevent third-party watermark injection (readdy.ai) *@
+    @* <script src="~/js/index.element.js" asp-append-version="true"></script> *@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
