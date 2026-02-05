@@ -15,8 +15,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <div class="flex items-center">
-                <a href="/" class="inline-flex items-center" aria-label="Oatnite">
-                    <img src="~/img/Oatnine.png" alt="Oatnite" class="h-10 w-auto" />
+                <a href="/">
+                    <span class="font-['Pacifico'] text-2xl text-primary">Oatnite</span>
                 </a>
             </div>
             <div class="hidden md:flex space-x-8">
@@ -144,26 +144,26 @@
 
         <!-- keep carousel inside the same centered container (avoid overflow on wide screens) -->
         <div class="relative mt-8" data-product-showcase>
-            @* <button type="button" data-product-prev class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all cursor-pointer" aria-label="Sản phẩm trước">
+            <button type="button" data-product-prev class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all cursor-pointer" aria-label="Sản phẩm trước">
                 <i class="ri-arrow-left-s-line text-2xl text-gray-900"></i>
             </button>
             <button type="button" data-product-next class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all cursor-pointer" aria-label="Sản phẩm tiếp theo">
                 <i class="ri-arrow-right-s-line text-2xl text-gray-900"></i>
-            </button> *@
+            </button>
 
             <!-- viewport: ensure only the visible page is shown -->
             <div class="overflow-hidden">
-                <div id="product-scroll" data-product-track class="flex justify-center gap-6 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
+                <div id="product-scroll" data-product-track class="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth" style="scrollbar-width: none;">
                     <!-- Card 1 -->
                     <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
                         <div class="relative w-full h-80 bg-white">
-                            <img alt="Cam" class="w-full h-full object-cover object-top" img src="~/img/Blueberry-Orange-Oatmeal-Bowl-Featured-2.jpg">
+                            <img alt="Việt Quất Hạnh Nhân" class="w-full h-full object-cover object-top" src="https://public.readdy.ai/ai/img_res/fe261693fb233e1bdddc98f5a103de1c.jpg">
                             <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">HỮU CƠ</div>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Cam</h3>
-                            <p class="text-gray-600 text-sm mb-4">Tươi mát với cam,giàu vitamin C & dễ ăn.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Việt Quất Hạnh Nhân</h3>
+                            <p class="text-gray-600 text-sm mb-4">Tươi mát với việt quất, béo nhẹ từ hạnh nhân, no lâu & dễ ăn.</p>
                             <div class="flex justify-end items-center">
                                 <button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all cursor-pointer" aria-label="Thêm vào giỏ">
                                     <i class="ri-shopping-cart-line text-xl"></i>
@@ -175,13 +175,13 @@
                     <!-- Card 2 -->
                     <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
                         <div class="relative w-full h-80 bg-white">
-                            <img alt="Dâu Tây" class="w-full h-full object-cover object-top" src="~/img/images.jpg">
-                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">HỬU CƠ</div>
+                            <img alt="Dâu Tây Vani" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20layered%20overnight%20oats%2C%20fresh%20strawberry%20slices%2C%20vanilla%20bean%20specks%2C%20creamy%20texture%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20delicious%20presentation%2C%20natural%20lighting%2C%20healthy%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-002&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">HỮU CƠ</div>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Dâu Tây </h3>
-                            <p class="text-gray-600 text-sm mb-4">Thơm mùi dâu tươi, cân bằng năng lượng buổi sáng.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Dâu Tây Vani</h3>
+                            <p class="text-gray-600 text-sm mb-4">Ngọt dịu vị vani, thơm dâu tươi, cân bằng năng lượng buổi sáng.</p>
                             <div class="flex justify-end items-center">
                                 <button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all cursor-pointer" aria-label="Thêm vào giỏ">
                                     <i class="ri-shopping-cart-line text-xl"></i>
@@ -193,13 +193,13 @@
                     <!-- Card 3 -->
                     <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
                         <div class="relative w-full h-80 bg-white">
-                            <img alt="Chuối" class="w-full h-full object-cover object-top" img src="~/img/yen-mach-chuoi-nuong.jpg">
-                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">MỚI</div>
+                            <img alt="Socola Đậu Phộng" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20chocolate%20overnight%20oats%2C%20peanut%20butter%20swirl%2C%20cacao%20nibs%20topping%2C%20protein%20rich%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20indulgent%20yet%20healthy%2C%20natural%20lighting%2C%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-003&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">GIÀU PROTEIN</div>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Chuối</h3>
-                            <p class="text-gray-600 text-sm mb-4">Vị chuối chín ngọt, tươi mát, lý tưởng cho ngày cần “vitamin boost”.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Socola Đậu Phộng</h3>
+                            <p class="text-gray-600 text-sm mb-4">Đậm cacao, béo bơ đậu phộng, phù hợp người tập luyện cần protein.</p>
                             <div class="flex justify-end items-center">
                                 <button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all cursor-pointer" aria-label="Thêm vào giỏ">
                                     <i class="ri-shopping-cart-line text-xl"></i>
@@ -207,13 +207,67 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 4 -->
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Xoài Nhiệt Đới" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20overnight%20oats%2C%20fresh%20mango%20chunks%2C%20coconut%20flakes%2C%20tropical%20fruit%20mix%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20vibrant%20colors%2C%20natural%20lighting%2C%20exotic%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-004&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">MỚI</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Xoài Nhiệt Đới</h3>
+                            <p class="text-gray-600 text-sm mb-4">Vị xoài chín ngọt, tươi mát, lý tưởng cho ngày cần “vitamin boost”.</p>
+                            <div class="flex justify-end items-center">
+                                <button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all cursor-pointer" aria-label="Thêm vào giỏ">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Táo Quế Ấm Áp" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20overnight%20oats%2C%20diced%20apples%2C%20cinnamon%20sprinkle%2C%20warm%20spices%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20cozy%20comfort%20food%2C%20natural%20lighting%2C%20classic%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-005&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">HỮU CƠ</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Táo Quế Ấm Áp</h3>
+                            <p class="text-gray-600 text-sm mb-4">Hương quế ấm, táo giòn ngọt, hợp gu “cozy” cho buổi sáng se lạnh.</p>
+                            <div class="flex justify-end items-center">
+                                <button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all cursor-pointer" aria-label="Thêm vào giỏ">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div data-product-card class="flex-shrink-0 w-80 bg-[#F7F5F2] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
+                        <div class="relative w-full h-80 bg-white">
+                            <img alt="Hỗn Hợp Trái Mọng" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Glass%20jar%20with%20overnight%20oats%2C%20mixed%20berries%20including%20raspberries%20blueberries%20blackberries%2C%20antioxidant%20rich%2C%20simple%20clean%20white%20background%2C%20professional%20food%20photography%2C%20colorful%20presentation%2C%20natural%20lighting%2C%20superfood%20breakfast%20product%20shot&amp;width=400&amp;height=400&amp;seq=product-006&amp;orientation=squarish">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">BÁN CHẠY</div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-1">Yến Mạch Qua Đêm</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Hỗn Hợp Trái Mọng</h3>
+                            <p class="text-gray-600 text-sm mb-4">Mix berry chống ngán, giàu chất xơ & chất chống oxy hóa.</p>
+                            <div class="flex justify-end items-center">
+                                <button class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all cursor-pointer" aria-label="Thêm vào giỏ">
+                                    <i class="ri-shopping-cart-line text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <div class="text-center mt-12">
-            <button class="bg-primary text-white px-10 py-4 rounded-full text-base font-bold hover:bg-primary/90 transition-all inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer">
-                <span>XEM TẤT CẢ SẢN PHẨM</span><i class="ri-arrow-right-line text-xl"></i>
+            <button class="bg-primary text-white px-10 py-4 rounded-full text-base font-bold hover:bg-primary/90 transition-all inline-flex items-center gap-2 whitespace-nowrap cursor-pointer">XEM TẤT CẢ SẢN PHẨM<i class="ri-arrow-right-line text-xl"></i>
             </button>
         </div>
     </div>
@@ -251,7 +305,7 @@
                     </div>
                 </div>
                 <p class="text-gray-600 leading-relaxed">
-                    "Tôi đã sử dụng Oatnite được 2 tuần và cảm thấy rất hài lòng.
+                    "Tôi đã sử dụng Oatnite được 3 tháng và cảm thấy rất hài lòng.
                     Không chỉ ngon mà còn giúp tôi no lâu và tràn đầy năng lượng cả buổi sáng.
                     Đặc biệt là hương vị dâu tây chia, tôi rất thích!"
                 </p>
@@ -410,7 +464,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-gray-900 mb-2">Địa Chỉ</h3>
-                            <p class="text-gray-600">Thạch Hòa, Thạch Thất<br />TP. Hà Nội, Việt Nam</p>
+                            <p class="text-gray-600">123 Đường Nguyễn Huệ, Quận 1<br />TP. Hồ Chí Minh, Việt Nam</p>
                         </div>
                     </div>
                     <div class="flex items-start space-x-4">
@@ -419,10 +473,18 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-gray-900 mb-2">Hotline</h3>
-                            <p class="text-gray-600">0966066211</p>
+                            <p class="text-gray-600">1900 1234 (Miễn phí)<br />028 3456 7890</p>
                         </div>
                     </div>
-
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ri-mail-line text-orange-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                            <p class="text-gray-600">info@oatnite.vn<br />support@oatnite.vn</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -475,8 +537,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8">
             <div>
-                <a href="/" class="inline-flex items-center" aria-label="Oatnite">
-                    <img src="~/img/Oatnine.png" alt="Oatnite" class="h-10 w-auto" />
+                <a href="/">
+                    <span class="font-['Pacifico'] text-2xl text-primary">Oatnite</span>
                 </a>
                 <p class="mt-4 text-gray-400 leading-relaxed">
                     Premium overnight oats for a healthy lifestyle.
@@ -495,12 +557,12 @@
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-semibold mb-6">Product Contain</h3>
+                <h3 class="text-lg font-semibold mb-6">Products</h3>
                 <ul class="space-y-3 text-gray-400">
-                    <li><a href="#" class="hover:text-white transition-colors">Banana</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Strawberry</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Yogurt</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Oats</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Banana Honey</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Strawberry Chia</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Chocolate Almond</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Mixed Berry</a></li>
                 </ul>
             </div>
             <div>
